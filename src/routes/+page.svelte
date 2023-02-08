@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { AccordionGroup, AccordionItem } from '@skeletonlabs/skeleton';
-	const chapters_numbers = [5,7,8,9]
+	const chapters_numbers = [5, 7, 8, 9];
 </script>
 
 <svelte:head>
@@ -13,25 +13,21 @@
 	<div class="space-y-10 text-center">
 		<h2 class="font-bold">Welcome to MATH102 Course.</h2>
 		<div>
-			{#each chapters_numbers as chap }
-				
-			<AccordionGroup>
-				<!-- Open -->
-				<AccordionItem class="card variant-filled-secondary p-1 mb-2">
-					<svelte:fragment slot="summary">Chapter {chap}</svelte:fragment>
-					<svelte:fragment slot="content">
-						<div class="flex justify-end">
-							<span class="chip p-1">
-								<a class="btn variant-soft-secondary" href="ch{chap}.jl.html" >Go to Page.</a>
-							</span>
-						</div>
-					
-					</svelte:fragment>
-				</AccordionItem>
-				
-			</AccordionGroup>
+			{#each chapters_numbers as chap}
+				<AccordionGroup>
+					<!-- Open -->
+					<AccordionItem class="card variant-filled-secondary p-1 mb-2">
+						<svelte:fragment slot="summary">Chapter {chap}</svelte:fragment>
+						<svelte:fragment slot="content">
+							<div class="flex justify-end">
+								<span class="chip p-1">
+									<a class="btn variant-soft-secondary" href="ch{chap}.html">Go to Page.</a>
+								</span>
+							</div>
+						</svelte:fragment>
+					</AccordionItem>
+				</AccordionGroup>
 			{/each}
-
 		</div>
 	</div>
 </div>
