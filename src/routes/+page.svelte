@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { AccordionGroup, AccordionItem } from '@skeletonlabs/skeleton';
-	const chapters_numbers = [5, 7, 8, 9];
+	const chapters_numbers = [5, 7, 8, 9, 10];
 </script>
 
 <svelte:head>
